@@ -2,7 +2,7 @@ import {createSlice} from '@reduxjs/toolkit'
 
 export const todoslice = createSlice({
     name:"todo",
-    initialState : ['Work', 'Clean'],
+    initialState : ['Code', 'Anime'],
     reducers:{
         addTodo:(state, action)=>{
             state.push(action.payload)
