@@ -1,8 +1,8 @@
 import React from 'react'
 import DoneTodo from './components/DoneTodo'
 import './App.css'
-
 import TodoList from './components/TodoList'
+
 function App() {
   return (
     <div>

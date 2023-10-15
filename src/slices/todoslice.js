@@ -15,4 +15,4 @@ export const todoslice = createSlice({
 
 export const {addTodo} = todoslice.actions
 export const {delTodo} = todoslice.actions
-export default todoslice.reducer
+export default todoslice.reducer 

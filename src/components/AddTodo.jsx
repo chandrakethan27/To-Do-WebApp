@@ -3,11 +3,12 @@ import {useForm} from 'react-hook-form';
 import {addTodo} from '../slices/todoslice';
 
 function AddTodo() {
-    const {register, handleSubmit, formState:{errors}} = useForm();
+    const {register, handleSubmit, reset, formState:{errors}} = useForm();
     const dispatch = useDispatch()
     const onFormSubmit = (data) =>{
         let actionObj = addTodo(data.todo)
         dispatch(actionObj)
+        reset();
     }
   return (
     <div>
